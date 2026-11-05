@@ -13,7 +13,7 @@ class Cart:
             return False
 
         self.items.append(dvd)
-        print("The disc has been added")
+        print(f"The disc '{dvd.title}' has been added")
         return True
 
     def remove_dvd(self, dvd):
