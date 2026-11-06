@@ -23,4 +23,4 @@ All notable changes to this project will be documented in this file.
 
 ### Fixed
 - Cart accepts the 21st DVD although the limit is 20.
-
+- Make search_by_title() case-insensitive.
