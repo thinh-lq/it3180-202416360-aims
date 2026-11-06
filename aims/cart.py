@@ -7,6 +7,12 @@ class Cart:
     def __init__(self):
         self.items = []
 
+    def sort_by_title(self):
+        self.items.sort(key=lambda dvd: dvd.title)
+
+    def sort_by_cost(self):
+        self.items.sort(key=lambda dvd: dvd.cost)
+
     def add_dvd(self, dvd):
         if len(self.items) >= MAX_NUMBERS_ORDERED:
             print("The cart is almost full")
